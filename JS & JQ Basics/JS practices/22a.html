@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html >
+<head><title>Untitled Document</title></head>
+<script>
+function fact()
+{   var a=document.getElementById("a").value;
+    var fact=1,i;
+	for(i=1;i<=a;i++)
+	{
+		fact=fact*i;
+	}
+	document.write("factorial of number is="+fact+"<br>");
+	return false;}
+</script>
+<body>
+<form onsubmit=" return fact()">
+Enter no to find factorial:<input type="text" id="a"/><br>
+<input type="submit" value="factorial" />
+</form>
+</body>
+</html>

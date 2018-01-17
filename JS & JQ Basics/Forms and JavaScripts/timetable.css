@@ -1,0 +1,61 @@
+h1.a
+{
+font-Family:"Jokerman";text-align:center;
+}
+table.b,td
+{
+border-style:solid;border-collapse:collapse;text-align:center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td {
+    height: 30px;
+}
+td
+{width:50px;
+}
+tr.lec{
+font-family:"Lucida Calligraphy";
+font-size:150%;
+}
+
+td.cst
+{background-color:chartreuse;
+}
+td.pstcl
+{
+background-color:blue;
+}
+
+td.cnl
+{
+background-color:Blueviolet;
+}
+td.nmst
+{
+background-color:cadetblue;
+}
+td.men
+{
+background-color:blue;
+}
+td.day{
+font-size: 150%; 
+font-family:Lucida Calligraphy;
+}
+td.cn{
+background-color:blueViolet;
+}
+td.cstl{
+background-color:chartreuse;
+}
+td.pstc{
+background-color:blue;
+}
+td.nmstl{
+background-color:pink;
+}
+

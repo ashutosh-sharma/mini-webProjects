@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function result2(){
+var a=document.formresult.name.value;
+var b=document.formresult.cst.value;
+var c=document.formresult.nmst.value;
+var d=document.formresult.c.value;
+var e=document.formresult.cn.value;
+var tm=Number(b)+Number(c)+Number(d)+Number(e);
+var p=tm/4;
+
+document.getElementsByName("result")[0].innerHTML=a+" you get";
+document.getElementsByName("result")[1].innerHTML=b+" marks in CST";
+document.getElementsByName("result")[2].innerHTML=c+" Marks in NMST";
+document.getElementsByName("result")[3].innerHTML=d+" Marks in C";
+document.getElementsByName("result")[4].innerHTML=e+" Marks in CN";
+document.getElementsByName("result")[5].innerHTML="Total Marks="+tm;
+document.getElementsByName("result")[6].innerHTML="Percentage="+p;
+document.getElementsByName("result")[7].innerHTML="Grade:=A";
+return false;
+}
+</script>
+</head>
+
+<body background="formback.jpg">
+<center>
+<fieldset >
+<legend>Get result</legend>
+<form  background="back.jpg" name="formresult">
+Name:
+<input type="text" id="name"/>
+<br><br>
+ENTER MARKS BELOW TO GET YOUR RESULT:<br><br>
+CST:&nbsp &nbsp
+<input type="text" id="cst"/>
+<br>
+NMST:
+<input type="text" id="nmst"/>
+<br>
+C: &nbsp &nbsp &nbsp &nbsp
+<input type="text" id="c"/>
+<br>
+CN:&nbsp &nbsp &nbsp
+<input type="text" id="cn"/>
+<br><br>
+<input type="button" value="Calculate Result" onclick="result2()"/>
+</form>
+</fieldset>
+
+<p name="result"></p> 
+<p name="result"></p> 
+<p name="result"></p> 
+<p name="result"></p> 
+<p name="result"></p> 
+<p name="result"></p> 
+<p name="result"></p> 
+<p name="result"></p> 
+</center>
+</body>
+</html>

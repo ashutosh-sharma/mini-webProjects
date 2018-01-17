@@ -1,0 +1,26 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>Untitled Document</title>
+<script>
+function abc(){
+document.getElementById("a").innerHTML="Hello World!";
+var x = document.getElementsByTagName("LI");
+document.getElementById("b").innerHTML = x[1].innerHTML;
+var y = document.getElementsByClassName("c");
+y[0].innerHTML = "javascript!";}
+</script>
+</head>
+<body >
+<p>An unordered list:</p>
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+<p id="b"></p>
+<p id="a"> GOOD BYE!</p>
+<p class="c">language</p>
+<input type="submit" value="change text" onclick="abc()" />
+</body>
+</html>

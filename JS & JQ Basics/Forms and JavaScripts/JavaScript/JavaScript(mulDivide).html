@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Java Script :Mul/Divide </title>
+
+<script type="text/javascript" >
+function multiply()
+{document.calc.out.value=parseInt(document.calc.abc1.value)*parseInt(document.calc.abc2.value);
+}
+function divide()
+{
+document.calc.out.value=parseInt(document.calc.abc1.value)/parseInt(document.calc.abc2.value);
+}
+</script>
+<style>
+#01{
+color:white;}
+</style>
+</head>
+
+<body background="C:\Users\ashu-PC\Downloads\Wallpapers\bg.jpg">
+<center>
+<fieldset>
+
+<legend><font color="white" family="">Multiply/Divide</font></legend>
+<font color="white">
+   <form
+         name="calc">
+      1st Number: &nbsp
+       <input type="text"
+	          name="abc1"/>
+      <br>
+      2nd Number:
+       <input type="text"
+			  name="abc2"
+              />
+      <br>
+       <input type="button"
+               value="Multiply"
+			   onclick="multiply()"/>
+       <input type="button"
+			  value="Divide"
+			  onclick="divide()"/>
+	  <br>
+	   Output:
+	  <input type="text"
+	          name="out"
+	         />
+			 </font>
+	</form>
+	</fieldset>
+</center>
+
+
+</body>	
+</html>

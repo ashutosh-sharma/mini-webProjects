@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Form On button</title>
+<script type="text/javascript">
+
+function ff(){
+var a=new Array("document.form2.fir.value,document.form2.sec.value,document.form2.third.value,document.form2.fourth.value");
+
+var x=prompt("Enter the friend you want to fire?");
+
+confirm("Are you sure?");
+
+for(i=0;i<4;i++)
+{
+if(a[i]!=x)
+{
+   a[j]=a[j+1];
+ }
+}
+
+}
+	
+</script>
+</head>
+<body>
+<center>
+<form name="form2">
+1.<input type="text" id="fir"/><br>
+2.<input type="text" id="sec"/><br>
+3.<input type="text" id="third"/><br>
+4.<input type="text" id="fourth"/><br>
+<input type="button" onclick="ff()" value="delete">
+</form>
+
+</center>
+
+</body>
+</html>

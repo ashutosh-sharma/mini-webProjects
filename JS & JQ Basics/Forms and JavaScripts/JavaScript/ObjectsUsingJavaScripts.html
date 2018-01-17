@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>GRADE</title>
+<script>
+function grade(){
+var stu=new Object();
+stu.name=document.form1.name1.value;
+stu.marks=document.form1.marks1.value;
+
+if(stu.marks>80)
+document.getElementById("ab").innerHTML=stu.name+"Congratulations,You got A+!"+"Your marks are:"+stu.marks;
+else
+   if(stu.marks>60)
+      document.getElementById("ab").innerHTML=stu.name+" You got A grade !";
+   else 
+         if(stu.marks>40)
+            document.getElementById("ab").innerHTML=stu.name+" You got B grade !";
+          else
+	         document.getElementById("ab").innerHTML=stu.name+" You got F !";
+		 return false;     
+}
+</script>
+</head>
+
+<body>
+
+<form name="form1">
+Name:
+<input type="text" name="name1">
+
+Marks:
+<input type="text" name="marks1">
+<input type="button" onclick="return grade()" value="Calculate GRADE">
+
+<p id="ab">
+
+</body>
+</html>

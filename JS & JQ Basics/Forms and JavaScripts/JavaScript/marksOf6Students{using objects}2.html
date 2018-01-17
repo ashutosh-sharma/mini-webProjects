@@ -1,0 +1,46 @@
+<!--Write a program to calculate total marks of 6 students in a class by using objects-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Class student's marks total</title>
+<script>	
+    function input(){
+	var choice=document.form1.ch.value;
+	var total=0;
+	while(choice==1){
+	 document.getElementById("out").innerHTML="<form name='form2'>Marks:<input type='text' name='marks'></form>";
+     total+=document.form2.marks.value;
+	 document.getElementById("out1").innerHTML="<form name='form1'>Choice:<input type='text' name='ch'>";	 
+	 choice=document.form1.ch.value;
+	}
+	else
+	document.getElementById("out2").innerHTML="TOTAL MARKS"+stu.total;		
+	}
+</script>
+</head>
+
+<body>
+<center>
+<h1>Marks of students</h1>
+</center>
+-Enter choice 1 for entering marks.
+<br>-Enter choice 0 for total marks upto entered marks.
+_________________________________________________________________
+<form name="form1">
+Choice:
+<input type="text" name="ch">
+<br>
+<input type="button" onclick="input()" value="START">
+</form>
+_________________________________________________________________
+<p id="out" />
+<br>
+_________________________________________________________________
+<p id="out1" />
+_________________________________________________________________
+<p id="out2"/>
+<br>
+<hr>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<title>Employee</title>
+
+<script>
+  
+  function date2()
+   { var a=new Date();
+	 b=a.getHours();
+	 c=a.getMinutes();
+	 d=a.getSeconds();
+	 e=a.getMilliseconds(); 
+	 document.getElementById("date").innerHTML="Time->"+b+":"+c+":"+d+":"+e;
+	 }	
+
+  function a()
+  {
+  document.getElementById("out").innerHTML="<form id='string'>STRING 1:<input type='text' id='s1'/> <br>STRING 2:<input type='text' id='s2'/><br><input type='button' onclick='st()' value='Concate'/></form>";
+  }
+  
+  function st()
+  { 
+    var x=string.s1.value;
+    var y=string.s2.value;
+	var z=x.concat(y);
+	document.getElementById("out1").innerHTML="Summary:"+z;
+	var sliced=z.slice(3,8);
+    document.getElementById("out2").innerHTML="Sliced from 3 to 8:"+sliced;	
+	var index1=z.indexOf('n');
+	document.getElementById("out4").innerHTML="Index Of 'n':"+index1;	
+	
+   }	 
+   function find(){
+  
+   }
+	
+	
+</script>
+</head>
+
+
+<body>
+<button onclick="date2()">Show Date</button>
+<p id="date"/>
+<hr>
+<br>
+<button onclick="a()">Concate two string</button>
+<p id="out"></p>
+<p id="out1"></p>
+<p id="out2"></p>
+<p id="out3"></p>
+<p id="out4"></p>
+
+</body>
+
+</html>

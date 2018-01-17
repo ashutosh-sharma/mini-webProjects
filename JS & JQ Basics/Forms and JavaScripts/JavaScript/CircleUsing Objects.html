@@ -1,0 +1,32 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Circle</title>
+<script>
+function cal(){
+var stu=new Object();
+stu.r=document.form1.rad.value;
+stu.area=3.14*stu.r*stu.r;
+stu.cir=2*3.14*stu.r;
+document.getElementById("out").innerHTML="<fieldset><legend>Result</legend><p id='out1'/><p id='out2'/></fieldset>";
+document.getElementById("out1").innerHTML="Area:"+stu.area;
+document.getElementById("out2").innerHTML="Circumference:"+stu.cir;
+}
+</script>
+</head>
+
+
+
+<body>
+<form name="form1">
+Enter Radius of the circle:
+<input type="text" name="rad"><br>
+<br>
+<input type="button" onclick="return cal()" value="Calculate">
+<hr><hr>
+<br>
+<p id="out"/>
+<hr>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype HTML>
+<html>
+<head>
+<title>Send Message</title>
+
+<script>
+function ch(){
+var a=document.q1.n.value;
+document.getElementById("name").innerHTML="Sandesh '"+a+"' ko bheja jayega.";
+}
+
+function f1(){
+document.getElementById("m").style.backgroundColor="yellow";
+}
+function f2(){
+document.getElementById("m").style.color="red";
+}
+function f3(){
+document.getElementById("m").style.color="green";
+}
+
+
+function f4(){
+document.getElementById("m").style.backgroundColor="white";
+}
+
+function msg(){
+var x=document.q1.m.value;
+if(x.length>0)
+alert("Dhnaywad! Sandesh ja Chuka hai!");
+else	
+alert("Budbak! Khali sandesh bhejne se kya hoga! Kch sandesh mein dale!");
+
+}
+</script>
+</head>
+
+<body>
+
+<center>
+<u><h2>Sandesh bheje!</h2></u>
+
+
+<form name="q1">
+Naam: &nbsp &nbsp 
+<select id="n" onchange="ch()">
+<option>Select</option>	
+<option>Arsh</option>
+<option>ArshPreet</option>
+<option>Arun</option>
+<option>Aman</option>
+</select> <br><b><span id="name"> </span></b>
+<br>
+Sandesh:<b>
+<input type="text" id="m" onfocus="f1()" onkeydown="f2()" onkeyup="f3()" onblur="f4()"/></b> <input type="button" value="Bhejen" onclick="msg()"/>
+</form>
+</center>
+
+</body>
+</html>

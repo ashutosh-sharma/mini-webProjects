@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>java Script:GetElementByTagName AND ByName AND Id</title>
+
+<script type="text/javascript">
+<!--alert("This is an Alert.!");    prompt("This is an prompt!");  --!>
+
+
+<!-- 1)It return the element of specific ID.  2)It is a method or function of Document object. 3)Properties->a)innerHTML b)innerText c)value --!>
+
+//function byElement(){
+//document.getElementById("a1").innerHTML="Using InnerHTML";
+//}
+
+function byTagName(){
+document.getElementsByTagName("p")[0].innerHTML="Paragraph's function.!";
+//document.getElementByTagName("p")[1].innerHTML="Paragraph 2's function.!";
+}
+function byName(){
+document.getElementsByName("a")[0].innerHTML="Heading 1";
+}
+function byId(){
+document.getElementById("b").innerHTML="Heading 2";
+}
+
+</script>
+
+</head>
+
+
+<body>
+
+<button onclick="byTagName()">byTagName1</button>
+
+
+<button onclick="byName()">byName1</button>
+
+
+<button onclick="byId()">byID1</button>
+
+<h1 name="a"> </h1>
+<h2 id="b"> </h2>
+<p >paragraph1</P>
+<p >paragraph2</P>
+<p >paragraph3</P>
+
+</body>
+</html>

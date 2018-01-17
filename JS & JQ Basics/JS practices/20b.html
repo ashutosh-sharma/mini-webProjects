@@ -1,0 +1,21 @@
+<!DOCTYPE html >
+<html >
+<head><title>Untitled Document</title></head>
+<script>
+function box1(){
+alert("Working of alert box");}
+function box2(){
+	var val=confirm("Do you know working of confirm box?");
+	if(val==true){
+		document.write("user knows confirm box");}
+		else{document.write("user does not know about confirm box");}}
+function box3(){
+	var val=prompt("Enter your name: ","your name here");
+	document.write("You have entered:"+val);}		
+</script>
+<body>
+<input type="submit" value="alert" onclick="box1()" />
+<input type="submit" value="confirm" onclick="box2()"/>
+<input type="submit" value="prompt" onclick="box3()"/>
+</body>
+</html>

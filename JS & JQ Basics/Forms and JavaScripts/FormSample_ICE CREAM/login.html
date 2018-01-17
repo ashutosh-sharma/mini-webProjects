@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<title>Sundae Funday:Login</title>
+</head>
+<link rel="stylesheet" type="text/css" href="IceCreamForm.css">
+<body>
+ <center>
+<img src="logo.png">
+ 
+<font size="72" style="font-family:JokerMan">
+ <b>'Sundae Funday'</b>
+ </font>
+ <br>
+ </center>
+
+<hr>
+<p>
+<center>
+<fieldset class="fs">
+
+<legend><font size="5"><b>Login With your '<u>Sundae Funday Account</u>' </b></font></legend>
+
+<table align="center" class="login">
+
+    <tr>
+	   <td align="center">
+		  <form
+			   method= "get"
+			   name="formLogin"
+			   onsubmit="username()">
+		  		  		  
+		    UserName:
+			<input type="text"
+			       name="uname"
+					placeholder="Username">
+					<br> </input>
+					
+	     	Password: &nbsp 
+			<input type="Password"
+				   name="Password"
+				   Placeholder="Choose strong one">
+				   <br> </input>
+				   
+			<input type="submit"
+	               value="Login">
+				   </input>
+				   <br>
+					<b>OR</b>
+				   <br>
+			Login With:
+				<br>
+			<input type="Image"
+		           src="fb.png"
+					height="50"
+					width="50"
+					onclick=location.href="www.fb.com">
+					</input>
+		<a href="https://www.plus.google.com">					   
+			<input type="Image"	
+					src="g.png"
+					height="50"
+					width="50"></input> </a>
+		  </form>
+		</td>
+    </tr>
+</table>
+
+<br><center>
+<b>OR</b><br>
+<Input type="Image"
+	   src="Register.jpg"
+	   onclick=location.href="Register.html">
+		   <br><br>
+<input align="center"
+       type="image"
+       src="homebutton.png"
+	   height=60 width=60
+       onclick=location.href="Home.html">
+	   </input>
+
+</center>
+</fieldset>
+</center>
+	   
+	   
+	   
+<script>
+function username()
+{
+
+var a=document.Form["formLogin"].["uname"].value
+document.write(a);
+    if(a==" "||a==null)
+	{alert("Whoa! You Forgot To put your Username.!");
+	}
+
+}	   
+	   
+</script>	   
+	   </body>
+</html>
+
+
+	   

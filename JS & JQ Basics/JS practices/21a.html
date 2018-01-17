@@ -1,0 +1,15 @@
+<!DOCTYPE html >
+<html >
+<head><title>Untitled Document</title></head>
+<script>
+function list(){
+var a=document.getElementById("a").value;
+var c=a.split(" ");
+document.write("list"+"<br>"+c+"<br>");
+return false;}
+</script>
+<body><form onSubmit="return list()">
+Enter  5 array elements:<input type="text" id="a" /><br/>
+<input type="submit" id="c" value="list" /></form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Form On button</title>
+<script type="text/javascript">
+
+function ff(){
+var data="<form id='abcde'> 'Name: <input type='Text'></input> <br>Mobile:<input type='Text' ></input><br>Comments:<br><textarea rows='10' cols='15'></textarea><input type='button' onclick='fg()' value='submit'></input>";
+document.getElementById("ab").innerHTML=data;
+} 
+function fg(){
+ document.getElementById("abcde").style.display="none";
+ 
+ }
+
+	
+</script>
+</head>
+<body>
+<center>
+
+<input type="button" onclick="ff()" value="Give your comments">
+
+<p id="ab"></p>
+
+</center>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html >
+<html >
+<head><title>Untitled Document</title>
+<script>
+function prime()
+{var i;var j;var isPrime;var n;
+ document.write(" prime numbers between 1 to 100"+"<br>");
+ for(i = 2; i <= 100; i++){
+ isPrime = 0;
+ for(j = 2; j <= i/2; j++){
+ if(i % j == 0){
+ isPrime = 1;
+ break;}}
+ if(isPrime==0 && 100!= 1)
+ document.write(i+" ");
+    }return false;}
+</script></head>
+<body>
+<form onsubmit="return prime()">
+<input type="submit"  value="Show prime" /></form>
+</body>
+</html>

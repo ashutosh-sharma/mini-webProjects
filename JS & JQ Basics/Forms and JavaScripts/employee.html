@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<title>Employee</title>  
+
+<script>
+  function employee(empid,ename,sal)
+    {
+     this.empid=empid;
+	 this.ename=ename;
+	 this.sal=sal;
+	 this.updatesal=function updatesal(){this.sal=sal+10000;}
+     }
+  
+  function a()
+   {
+	 var emp=new employee(101,"arsh",1000000);
+	 document.getElementById("out").innerHTML="EmpId:"+emp.empid+"EmployeeName:"+emp.ename+"Salary:"+emp.sal;
+	 emp.updatesal();
+	 document.getElementById("out1").innerHTML="EmpId:"+emp.empid+"EmployeeName:"+emp.ename+"Salary:"+emp.sal;
+	 document.write.innerHTML="Thank You!";
+	 }	
+</script>
+</head>
+
+
+<body>
+Press this button to show employee data:
+<button onclick="a()">Os</button>
+<p id="out"></p>
+<p id="out1"></p>
+</body>
+
+</html>

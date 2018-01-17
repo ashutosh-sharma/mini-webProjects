@@ -1,0 +1,71 @@
+<!--Array Functions---->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Array Inbuild functions</title>
+<script>	
+		function arr(){
+			var ar=new Array();
+			 var p=document.form2.add.value;
+			 var s=document.form2.splice1.value;
+			ar=[document.form2.fir.value,document.form2.sec.value,document.form2.third.value];
+			var x=ar[0];
+			var y=ar[1];
+			var z=ar[2];
+		
+		
+			document.write("Array List:");		
+			
+			for(i=0;i<ar.length;i++)
+				{
+				document.write(ar[i]+" ");
+				}
+		     
+			document.write("<hr>1.PUSH:");
+					
+           		ar.push(p);
+				for(i=0;i<ar.length;i++)
+				{
+				document.write(ar[i]+" ");
+				}
+           
+		   document.write("<hr>2.POP:");
+		      ar.pop();
+			   for(i=0;i<ar.length;i++)
+				{
+				document.write(ar[i]+" ");
+				}
+           document.write("<hr>2.SPLICE at index 2:");
+		      ar.splice(2,0,s);
+			   for(i=0;i<ar.length;i++)
+				{
+				document.write(ar[i]+" ");
+				}
+             
+		 }
+		
+</script>
+</head>
+
+
+<body>
+Enter Array: <br>
+<form name="form2">
+   	    Element1<input type="text" name="fir">
+	<br>Element2<input type="text" name="sec">
+	<br>Element3<input type="text" name="third">
+<hr>
+<br>1.Add element at last index<br>
+<input type="text" id="add"/>
+<hr>
+2.Delete Element from last index<br>
+<hr>
+3.Splice:
+<input type="text" id="splice1"/>
+</form>
+
+<input type= "button" onclick="return arr()" value="Operate Operations"><br>
+
+</body>
+</html>

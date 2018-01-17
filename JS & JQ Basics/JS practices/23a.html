@@ -1,0 +1,72 @@
+<!DOCTYPE html >
+<html >
+<head><title>Untitled Document</title>
+<script>
+function val()
+{var a=document.getElementById("b").value;
+	document.getElementById("c").innerHTML=a;
+	return false;}
+function val1()
+{var ab=document.getElementById("cc").value;
+	document.getElementById("gg").innerHTML=ab;
+	return false;}
+function mes()
+{document.getElementById("a").style.backgroundColor="yellow";
+	return false;}
+function mess()
+{    document.getElementById("a").style.color="red";
+	document.getElementById("a").style.fontWeight="bold";
+	return false;}
+function mess1()
+{document.getElementById("a").style.color="green";
+	return false;}
+function mess2()
+{document.getElementById("a").style.backgroundColor="white";
+	return false;}
+function send()
+{    document.getElementById("aa").innerHTML="Message send";
+	document.getElementById("aa").style.color="black";
+     return false;}
+function send1()
+{   document.getElementById("aa").style.color="green";
+	return false;}
+function send2()
+{document.getElementById("aa").style.color="red";
+	return false;}
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Event handling";}
+function myFunction2() {
+    alert("You pressed a key inside the input field");}
+function myFunction3() {
+    alert("Page is loaded");}
+function myFunction4() {
+    alert("Thank you for visiting ");}
+function mouseDown() {
+    document.getElementById("myP").style.color = "red";}
+
+function mouseUp() {
+    document.getElementById("myP").style.color = "green";}
+function s()
+{
+	document.write("work completed!");
+	return false;}
+</script></head>
+<body onload="myFunction3()" onunload="myFunction4()">
+<h1>FORM</h1>
+<form onsubmit="return s()">
+Select Name:<select id="b" onchange="return val()">
+<option>--</option>
+<option>anureet</option>
+<option>arushi<option></select><br>
+Select Hobby:<select id="cc" onchange="return val1()">
+<option>--</option>
+<option>Dance</option>
+<option>Singing</option></select><br>
+<p id="c"></p><p id="gg"></p><br>
+<br />Enter message:<input type="text" id="a" onkeydown="mess()" onkeyup="mess1()" onfocus="mes()" onblur="mess2()" onkeypress="myFunction2()"/><br /><input type="submit" value="send" onclick="return send()" onmouseover="send1()" onmouseout="send2()"   /><br />
+<input type="reset" value="reset" />
+<p id="aa"></p><p ondblclick="myFunction()">Double click it!!</p>
+<p id="demo"></p><p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">form submitted</p>
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype HTML>
+<html>
+<head>
+<title>Window.history</title>
+<script>
+function press(){
+var a=window.history.length;
+var b=window.navigator.appCodeName;
+var c=window.navigator.appName;
+var d=window.navigator.appVersion;
+var e=window.navigator.cookieEnabled;
+var f=window.navigator.language;
+var g=window.navigator.userAgent;
+var h=window.navigator.platform;
+var i=window.navigator.online;
+
+
+document.write("history length:"+a+"<br>AppCODEName:"+b+"<br>AppNAme:"+c+"<br>AppVersion:"+d+"<br>CookieEnabled:"+e+"<br>Language"+f+"<br>UserAgent"+g+"<br>platform"+h+"<br>online:"+i+"<br>Java:"+navigator.javaEnabled());
+//document.getElementById("p1").innerHTML="history length:"+a+"<br>AppCODEName:"+b+"AppNAme:"+c+"AppVersion:"+d+"CookieEnabled:"+e+"Language"+f+"UserAgent"+g+"platform"+h+"online:"+i";
+}
+</script>
+</head>
+
+<body>
+<input type="button" value="button" onclick="press()"/>
+<p id="p1"></p>
+</body>
+</html>

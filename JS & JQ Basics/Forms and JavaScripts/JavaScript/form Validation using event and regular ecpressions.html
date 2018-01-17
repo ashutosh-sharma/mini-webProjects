@@ -1,0 +1,60 @@
+<!doctype HTML>
+<html>
+<head><title>Form validations</title>
+<script>
+ function urf(){
+ var c=document.form1.em.value;
+ 
+ /*var a=document.form1.fn.value;
+ var b=document.form1.ln.value;
+ var d=document.form1.rem.value;
+ var e=document.form1.d.value;
+ var f=document.form1.m.value;
+ var g=document.form1.y.value;
+ var h=document.form1.g.value;
+ var i= new RegExp("[(@)? (.com)$]");
+*/
+ 
+ /*if(a==NULL)
+ {
+  document.write("You must fill all the fields.");
+ }
+ */
+ 
+ /*
+ if(c!=d)
+ {
+ document.getElementById("out3").innerHTML="Emails do not match.";
+ }
+ */
+ var x=[a-z0-9._]+@[a-z0-9]+/.[a-z]{2,3};
+ if(c==x)
+ alert("Email accepted!");
+ else
+ alert("Email not OK!");
+ 
+return false;
+ 
+ }
+</script>
+</head>
+
+
+<body>
+
+<h2 align="center">User Registration form</h2>
+
+<form id="form1">
+Email: &nbsp &nbsp &nbsp &nbsp
+<input type="text" id="em">
+<br>
+<input type="button" value="Submit" onclick="return urf()"/>
+</form>
+
+
+<p id="out1"/>
+<p id="out1"/>
+<p id="out3"/>
+
+</body>
+</html>

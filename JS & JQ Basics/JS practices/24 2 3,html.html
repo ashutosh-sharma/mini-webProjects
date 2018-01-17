@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html><head><title>Untitled Document</title><script>
+var dt= new Date();
+var a=dt.getHours();
+var b=dt.getSeconds();
+var c=dt.getMilliseconds();
+document.write("Current Time"+":"+a+" :"+b+" :"+c);
+function str(){
+var one=new String(document.getElementById("a").value);
+var second=new String(document.getElementById("b").value);
+var st1=one.concat(second);
+var sliced = st1.slice(3,6);
+var index = st1.indexOf( "rent" ); 
+document.getElementById("c").innerHTML=st1+" "+sliced+" "+index;
+return false;}
+</script>
+</head><body>
+<form >
+String 1:<input type="text" id="a"  /><br /><br />
+String 2:<input type="text" id="b" /><br /><br />
+<input type="submit"  value="concate" onclick="return str()" /><br /></form>
+Summary:<p id="c"></p>
+</body>
+</html>

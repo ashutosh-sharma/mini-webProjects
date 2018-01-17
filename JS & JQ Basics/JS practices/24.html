@@ -1,0 +1,38 @@
+
+<!DOCTYPE html >
+<html ><head>
+<title>Untitled Document</title>
+<script>
+function abc(){
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+var c=a.split(" ");
+var d=b.split(" ");
+document.write("list"+"<br>"+c+"<br>"+d+"<br>");
+var e=c.pop();
+var f=d.pop();
+document.write("pop"+"<br>"+e+"<br>"+f+"<br>");
+var g=c.push(100);
+var h=d.push(200);
+document.write("<br>"+"push"+"<br>"+c+"<br>"+d);
+var g=c.unshift("numbers");
+var h=d.unshift("math");
+document.write("<br>"+"unshift"+"<br>"+c+"<br>"+d);
+var g=c.shift();
+var h=d.shift();
+document.write("<br>"+"shift"+"<br>"+g+"<br>"+h);
+var g=c.splice(2,0,"water");
+var h=d.splice(2,0,"orange");
+document.write("<br>"+"splice add"+"<br>"+c+"<br>"+d);
+var g=c.splice(3,1);
+var h=d.splice(3,1);
+document.write("<br>"+"splice"+"<br>"+c+"<br>"+d);
+return false;}
+</script></head><body>
+<form onsubmit="return abc()">
+A1:<input type="text" id="a" /><br /><br />
+A2:<input type="text" id="b" /><br /><br />
+<input type="submit" id="c" value="list"/>
+</form>
+</body>
+</html>

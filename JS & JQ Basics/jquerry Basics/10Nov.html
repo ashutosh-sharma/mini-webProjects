@@ -1,0 +1,44 @@
+<html>
+<head>
+<script src="jquery-3.1.1.js">
+</script>
+
+<script>
+
+$(document).ready(function(){ 
+   $("#a").click(function(){
+     $("img").fadeOut("slow");
+     });
+  
+   $("#b").click(function(){
+     $("img").animate({
+	     margin:'150px',
+		height:'500px',
+	     opacity:'0.5'
+	 }); });
+   
+   $("#c").click(function(){
+     $("img").fadeIn("slow");
+     });
+  
+  
+  });
+
+  
+  
+  
+</script>
+</head>
+
+<body>
+
+<h3>Image</h3>
+
+<img src="logo.png"/>
+<br>
+
+<input type="button" id="a" value="FadeOut"/>
+<input type="button" id="c" value="FadeIn"/>
+<input type="button" id="b" value="Animate"/>
+
+</body>

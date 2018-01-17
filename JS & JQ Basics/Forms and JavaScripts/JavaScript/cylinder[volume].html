@@ -1,0 +1,34 @@
+<!--A program to calculate volume of a cylinder using objects,upto 4 decimal places--> 
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Circle</title>
+<script>
+		function cal(){
+		var stu=new Object();
+		stu.r=document.form1.rad.value;
+		stu.h=document.form1.hei.value;
+		stu.vol=3.14*stu.r*stu.r*stu.h;
+		stu.vol2=stu.vol.toFixed(4);
+		document.getElementById("out").innerHTML="<fieldset><legend>Result</legend><p id='out1'/></fieldset>";
+		document.getElementById("out1").innerHTML="Volume:"+stu.vol2;
+		}
+</script>
+</head>
+
+
+<body>
+<form name="form1">
+Enter Radius of the cylinder:
+<input type="text" name="rad"><br>
+Enter height of the cylinder:
+<input type="text" name="hei"><br>
+<br>
+<input type="button" onclick="return cal()" value="Calculate">
+<hr><hr>
+<br>
+<p id="out"/>
+<hr>
+</body>
+</html>

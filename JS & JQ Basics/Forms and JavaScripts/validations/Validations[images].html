@@ -1,0 +1,60 @@
+<!doctype HTML>
+<html>
+<head>
+<script>
+
+function check(){
+var a=document.form2.user.value;
+var b=document.form2.pass.value;
+ if(a.length==0){
+  document.getElementById("a1").innerHTML="<img height='20' width='20' src='cross.png'> Please fill username.";  
+    }
+  if(a.length>5){
+   document.getElementById("a1").innerHTML="<img height='20' width='20' src='check.png'></img>";
+     }
+  if(a.length>0&&a.length<5){
+    document.getElementById("a1").innerHTML="<img height='20' width='20' src='cross.png'></img>Username must be Greater than 5 letters.";
+	}
+  if(b.length==0){
+   document.getElementById("p1").innerHTML="<img height='20' width='20' src='cross.png'></img> Please fill password."; 
+    }
+  if(b.length>0&&b.length<5){
+    document.getElementById("p1").innerHTML="<img height='20' width='20' src='cross.png'></img>Password length must be Greater than 5 letters.";
+	}
+  if(b.length>5){
+    document.getElementById("p1").innerHTML="<img height='20' width='20' src='check.png'></img>";
+  }	
+ }
+</script>
+<style>
+fieldset{
+display:inline-block;}
+</style>
+</head>
+
+<body>
+
+<form name="form2" onsubmit="return check()" action="Frameset.html">
+
+<table>
+ 
+ <tr>
+   <td><b>Username:</b></td>
+   <td><input type="text" name="user"></td> 
+   <td><p id="a1">  </p></td>
+ </tr>
+ <tr>
+  <td><b>Password:</b></td>
+  <td><input type="password" name="pass"></td> 
+  <td><p id="p1">  </p></td>
+ </tr>
+ <tr>
+   <td></td>
+   <td><input type="submit" value="Submit"></td>
+ </tr>
+</table>
+</form>
+
+
+</body>
+</html>

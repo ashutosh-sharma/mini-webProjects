@@ -1,0 +1,11 @@
+table,td,tr{
+	border-style:solid;
+	border-collapse:collapse;
+	text-align:center;
+    font-size:60px;	
+	background-image:url("tb.jpg");
+}
+body{
+	background-image:url("bbg.jpg");
+}
+
